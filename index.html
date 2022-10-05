@@ -1,7 +1,7 @@
-<!--/////////////////////////////////////////////////////////////////////////-->
-<!-- doctype is included for html to work-->
+<!-- /////////////////////////////////////////////////////////////////////// -->
+<!-- doctype is included for html to work -->
 <!DOCTYPE html>
-<!-- this element wraps all the content on the page aka root element-->
+<!-- this element wraps all the content on the page aka root element -->
 <html lang="en">
     <!-- This element acts as a container for everything you want to include on 
         the HTML page, that isn't the content the page will show to viewers. 
@@ -9,25 +9,244 @@
     <head>
         <!-- The charset attribute sets the character set for your document to 
             UTF-8, which includes most characters from the vast majority of human 
-            written languages. meta is a void element-->
-        <meta charset="UTF-8"/>
+            written languages. meta is a void element -->
+        <meta charset="UTF-8">
         <!-- a pragma directive, providing information equivalent to what can be
-            given by a similarly-named HTTP header.-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            given by a similarly-named HTTP header. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- provides document-level metadata, applying to the whole page. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="author" content="Alexander G. Arias"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Specify an author -->
+        <meta name="author" content="Alexander G. Arias">
+        <!-- Describe web page -->
+        <meta name="description" content="Introduction to HTML - LAB 2 CSE 110">
         <!-- This sets the title of the page, which is the title that appears in 
-            the browser tab the page is loaded in.-->
+            the browser tab the page is loaded in. -->
         <title>Team Asuma's Meeting Minutes!</title>
         <!-- A favicon is a small image, so it should be a simple image with high 
-            contrast. link to favicon-->
-        <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA9vb2APX19QABAQEAKCgoAOnp6QADAwMAIyMjAKioqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREBAREREREREQEQERERERERARQFEREREREBEQABEREREQEREAARERERAREWAAIREREBEREAABEREQERERAFERERARERESAxEREBEREREQAREQEREREREAERARERERERMAEBEREREREBKAEREREREQcBAREREREREhGAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAA" 
-            rel="icon" 
-            type="image/x-icon" />
+            contrast. link to favicon -->
+        <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA9vb2APX19QABAQEAKCgoAOnp6QADAwMAIyMjAKioqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREBAREREREREQEQERERERERARQFEREREREBEQABEREREQEREAARERERAREWAAIREREBEREAABEREQERERAFERERARERESAxEREBEREREQAREQEREREREAERARERERERMAEBEREREREBKAEREREREQcBAREREREREhGAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAA" type="image/x-icon">
     </head>
     <!-- This contains all the content that displays on the page, including text, 
         images, videos, games, playable audio tracks, or whatever else.-->
     <body>
+        <!-- Usually a big strip across the top with a big heading, logo, and 
+            perhaps a tagline. This usually stays the same from one webpage to 
+            another.-->
+        <header>
+            <div class="course-meeting">
+                <img src="images/cse110-rectangular.png" alt="picture-of-cse-110" width="100" height="100">
+                <h3>Software Engineering</h3>
+            </div>
+            <!-- Links to the site's main sections; usually represented by menu 
+                buttons, links, or tabs. -->
+            <nav>
+                <!-- unordered list-->
+                <ul>
+                    <!-- list element and hyperlink element with attributes-->
+                    <li><a href="#attendees">Attendees</a></li>
+                    <li><a href="#agenda">Meeting Agenda</a></li>
+                    <li><a href="#unfinished-business">Unfinished Business</a></li>
+                    <li><a href="#new-business">New Business</a></li>
+                    <li><a href="#miscellaneous">Comments, Questions, Concerns and Logistics</a></li>
+                    <li><a href="#presented-media">Presented Media</a></li>
+                    <li><a href="#audio-recording">Audio Recording of Meeting</a></li>
+                    <li><a href="#video-recording">Video Recording of Meeting</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- A big area in the center that contains most of the unique content of a 
+            given webpage, for example, the video you want to watch, or the main story
+            you're reading, or the map you want to view, or the news headlines, etc. 
+            This is the one part of the website that definitely will vary from page to 
+            page!-->
+        <main>
+            <!-- h1 is the main heading of the website, should only be used once -->
+            <h1>Team Asuma's First Meeting: Introductions</h1>
+            <!-- h2 is a subheading of the website -->
+            <h2>Introducing Ourselves to Eachother:</h2>
+            <details>
+                <summary>First Meeting</summary>
+                <p>The second week of the quarter is finally here. Overall, teams were assigned <br> 
+                    and groups are finally starting to conduct their first meetings. Team Asuma has <br>
+                    decided to conduct their first meeting while ensuring to address any issue along the way. <br>
+                    Review this webpage to catch up on the overview of the first meeting. 
+                </p>
+            </details>
+            <!-- h3 is a sub-subheading of the website and so on -->
+            <!-- Of the six heading levels available, you should aim to use no more
+                than three per page -->
+            <h3><time datetime="2022-10-04">4 October 2022</time></h3>
+            <section>
+                <h2 id="attendees">Attendees:</h2>
+                <ul>
+                    <li><u>Alexander G. Arias</u></li>
+                    <li><u>Alexander Olsen</u></li>
+                    <li><u>Antonio Peso Vilella</u></li>
+                    <li><u>Buwei Wu</u></li>
+                    <li><u>Charles Young</u></li>
+                    <li><u>Deepansha Singh</u></li>
+                    <li><u>Hyunmin Lim</u></li>
+                    <li><u>Jennifer Jiang</u></li>
+                    <li><u>Xiaoyu Chen</u></li>
+                </ul>
+            </section>
+            <h2 id="agenda">Meeting Agenda: ~ 60 Minutes</h2>
+            <ol>
+                <li><b>Introduce yourself when asked to do so.</b> <strong><em>~ 2 
+                    minutes each person</em></strong>
+                </li>
+                <li><b>Communicate your role in the CSE110 group project.</b> <strong><em>~ 1 
+                    minute each person</em></strong>
+                </li>
+                <li><b>What are you or are you not looking forward to getting out of this course?</b> <strong><em>~ 1 
+                    minute each person</em></strong>
+                </li>
+                <li><b>What do you expect from a team working environment?</b> <strong><em>~ 1 
+                    minute each person</em></strong>
+                </li>
+                <li><b>Disuss group expectations and next time to meet.</b> <strong><em>~ 15 
+                    minutes</em></strong>
+                </li>
+            </ol>
+            <section>
+                <h2 id="unfinished-business">Unfinished Business:</h2>
+                <p>
+                    It is still a bit unclear if people will be available to meet during <br>
+                    the week. We need to address the ongoing issue of schedule incompatability <br>
+                    within the group. We <strong>need</strong> to come up with <strong>various</strong> solutions <br>
+                    that can provide an <strong> <em>ultimate compromise</em></strong> so that we may succeed.
+                </p>
+                <p>
+                    We also need to figure out if people are <b><i>happy and content</i></b>  with their group roles/assignments. <br>
+                    We need to verify that people are in the role they desire to be in to maximize our labor efficiency. <br>
+                    Overall, it is <strong>imperative</strong> for everyone to take time out of their day to try and address these issues. 
+                </p>
+            </section>
+            <section>
+                <h2 id="new-business">New Business:</h2>
+                <p>
+                    The new issues that have come up have to deal with the design of the CSE110 project. Overall, it appears we have <br> 
+                    <b>NOT</b> made any progress concerning any ideas about our web development goal that we want to achieve. <br>
+                    It is <strong>extremely</strong> concerning that a portion of the project is already around the corner, and <br>
+                    it appears we will not be able to submit something <b><i>reasonable</i></b> in time for the group presentations. <br>
+                </p>
+                <p>
+                    Another issue that has come up involves the lack of understanding of ones roles. Therefore, we need to come together to <br>
+                    discuss potential role changes within the group. We have also noticed that some groupmemebers have not been getting <br>
+                    enough rest. This appears to be an upcoming threat to our performance as a group, and needs to be addressed as soon <br>
+                    as possible.
+                </p>
+            </section>
+            <section>
+                <h2 id="miscellaneous">Comments, Questions, Concerns and Logistics?</h2>
+                <form>
+                    <fieldset style="width:243px">
+                        <legend>Identity:</legend>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="date-filled">Current Date:</label><br>
+                        <input type="date" id="date-filled" name="date-filled" required><br><br>
+                    </fieldset>
+                    <fieldset style="width:0px">
+                        <legend>Comments:</legend>
+                        <label for="comments1">Yes:</label>
+                        <input type="radio" id="comments1" name="comments" required>
+                        <label for="comments2">No:</label>
+                        <input type="radio" id="comments2" name="comments"><br><br>
+                        <textarea name="comments" id="text-comments" cols="30" rows="10" placeholder="If yes, what are they?"></textarea>
+                        <br><br>
+                    </fieldset>
+                    <fieldset style="width:0px">
+                        <legend>Questions:</legend>
+                        <label for="questions1">Yes:</label>
+                        <input type="radio" id="questions1" name="questions" required>
+                        <label for="questions2">No:</label>
+                        <input type="radio" id="questions2" name="questions"><br><br>
+                        <textarea name="questions" id="text-questions" cols="30" rows="10" placeholder="If yes, what are they?"></textarea>
+                        <br><br>
+                    </fieldset>
+                    <fieldset style="width:243px;">
+                        <legend>Concerns:</legend>
+                        <label for="concerns1">Yes:</label>
+                        <input type="radio" id="concerns1" name="concerns" required>
+                        <label for="concerns2">No:</label>
+                        <input type="radio" id="concerns2" name="concerns"><br><br>
+                        <textarea name="concerns" id="text-concerns" cols="30" rows="10" placeholder="If yes, what are they?"></textarea>
+                        <br><br>
+                    </fieldset>
+                    <fieldset style="width: 243px">
+                        <legend>Logistics:</legend>
+                        <label for="browser">Pick a browser you prefer for html:</label>
+                        <input list="browsers" name="browser" id="browser" required>
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                        <br><br>
+                        <label for="meeting-times">Choose a day for the next meeting:</label>
+                        <select name="date" id="meeting-times" required>
+                        <option value="">10/05/2022</option>
+                        <option value="">10/06/2022</option>
+                        <option value="">10/07/2022</option>
+                        <option value="">10/08/2022</option>
+                        </select><br><br>
+                        <button type="button" onclick="alert('Blowing Off Steam!')">Click Me To Blow Off Some Steam!</button>
+                    </fieldset>
+                    <br>
+                    <label for="verify">Check me after verifying everything is correct:</label>
+                    <input type="checkbox" id="verify" required>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <section>
+                <h2 id="presented-media">Presented Media:</h2>
+                <details>
+                    <summary>Multimedia Recordings</summary>
+                    <p>
+                        The following <strong><em>media</em></strong> were presented during the meeting. They all have some forms of web <br>
+                        development in common.
+                    </p>
+                </details>
+                <span class="media">
+                <img src="https://www.computerhope.com/jargon/s/software-engineering.jpg" alt="Software Engineering Diagram1" width="300" height="300">
+                <img src="https://static.javatpoint.com/tutorial/software-engineering/images/software-engineering-introduction.png" alt="Software Engineering Diagram2" width="300" height="300">
+                <img src="https://madebyewd.com/wp-content/uploads/2014/09/web-design-basics.png" alt="Web Design Basics" width="300" height="300">
+                </span>
+                <br>
+                <span class="media">
+                <img src="https://www.departmentofproduct.com/wp-content/uploads/2016/12/System-overview.png" alt="Whiteboard Diagram1" width="300" height="300">
+                <img src="https://d33wubrfki0l68.cloudfront.net/64c858589e5f74d4df385b322747a98dc4158ec2/127dd/img/wbo-2.png" alt="Whiteboard Diagram2" width="300" height="300">
+                <img src="https://d23fqex5axu15s.cloudfront.net/img/features/sketchboard-software-diagram-darkmode.png" alt="Whiteboard Diagram3" width="300" height="300">
+                </span>
+                <h3 id="audio-recording">Meeting Audio:</h3>
+                <audio controls>
+                    <source src="multimedia/meeting_audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+                <h3 id="video-recording">Meeting Video:</h3>
+                <video width="320" height="240" controls>
+                    <source src="multimedia/meeting_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </main>
+        <!-- <hr> elements create a horizontal rule in the document that denotes a 
+            thematic change in the text (such as a change in topic or scene). 
+            Visually it just looks like a horizontal line.  -->
+        <hr>
+        <!-- A strip across the bottom of the page that generally contains fine print, 
+            copyright notices, or contact info. -->
+        <footer>
+            <p>&copy;Copyright 2022 by <b>Team Asuma.</b>&trade; All rights reserved.</p>
+            <p>By: <u>Alexander G. Arias</u></p>
+            <p>Email: agarias@ucsd.edu</p>
+        </footer>
     </body>
 </html>
