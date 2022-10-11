@@ -1,4 +1,4 @@
-# Lab 2 - Starter
-[Github Page](https://matheldergod.github.io/Lab2)
+# Lab 3
+[Github Page](https://matheldergod.github.io/fa22-cse110-lab3/)
 
-else try: https://matheldergod.github.io/Lab2/
+else try: https://matheldergod.github.io/fa22-cse110-lab3/
