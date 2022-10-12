@@ -1,5 +1,12 @@
 /*////////////////////////////////////////////////////////////////////////////*/
+/*Include and use a 3rd party font (https://fonts.google.com/Links to an external
+ site.). You can load the font in either your HTML or your CSS*/
+@font-face {
+    font-family: "kanit";
+    src: url("https://fonts.google.com/specimen/Kanit");
+  }
 /* center into image from the web page*/
+/* class selector */
 .cse_110_image {
     display: block;
     border-color: yellow;
@@ -16,6 +23,10 @@
     the default value.*/
     position: static;
 }
+/* universal selector css to apply font style to everything */
+* {
+    font-family: "kanit", sans-serif;
+}
 /* cenetering the page pre title */
 .software_enginerring_title {
     color: white;
@@ -31,6 +42,7 @@
 }
 /* :hover can be used to select a button when a user's pointer hovers 
 over the button and this selected button can then be styled. */
+/* pseduo class selector */
 a:hover {
     color: red;
 }
@@ -38,12 +50,16 @@ a:hover {
 a:active {
     color: brown;
 }
+
 /* Make the font size larger for the navigation tab */
 .nav_data {
     font-size: 1.3em; /* first relative unit */
     margin: 10px 10px 10px 10px; /* first short margin */
 }
-
+/* attribute selector - should color out the attendees nav link */
+a[href="#attendees"] {
+    color: black;
+}
 /* Setting undordered list backgrounds and borders */
 ul {
     color: black;
@@ -102,12 +118,12 @@ h2 {
     border-radius: 0.5in;
 }
 /* body of web page */
-body { 
+body {
     /* setting backgorund color of web page */
     background-color: hsl(150deg 30% 60%);
     /* make the font size for the entire page larger */
     font-size: 13pt; /* first absolute unit */
-    width: 15in; /* second absolute unt */
+    width: 16in; /* second absolute unitt */
     margin: auto; /* first auto margin */
 }
 /* setting border on details tab */ 
@@ -125,6 +141,7 @@ body {
     font-size: 2.6ex; /* third  relative unit */
 }
 /* setting nav data text color*/
+/* id selector*/
 #nav-unordered-list {
     color: rgb(170, 11, 170);
 }
@@ -160,6 +177,10 @@ body {
     min-width: 1in;
     
 }
+/* short padding the agenda ordered list */
+#agenda-ordered-list {
+    padding: 10px 0.5in 10px 1.5in;
+}
 /* applying CSS information to the questionare data */
 #questionare-data {
     background-color: #FF7F50;
@@ -167,12 +188,24 @@ body {
     border-color: black;
     border-radius: 0.5in;
     position: relative;
-    left: 6in;
-    max-width: 3in;
+    max-width: auto;
     padding-left: 0.5in;
     padding-right: 0.5in;
     padding-top: 0.5in;
     padding-bottom: 0.5in;
+
+    /* This defines a flex container; inline or block depending on the given value. 
+    It enables a flex context for all its direct children. */
+    display: flex;
+    /* row (default): left to right in ltr; right to left in rtl */
+    flex-direction: row;
+    /* flex items will wrap onto multiple lines, from top to bottom. */
+    /* implemented flex features on questionare data */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 10px 10px;
 }
 /* setting hover over blowing off steam button*/
 button:hover {
@@ -182,9 +215,44 @@ button:hover {
 button:active {
     color: darkgreen;
 }
-/* short padding the agenda ordered list */
-#agenda-ordered-list {
-    padding: 10px 0.5in 10px 1.5in;
+/* implemented css features on media details tab */
+#media-details {
+    font-size: 25px; /* third absolute unit */
+    text-indent: 15px;
+    padding: 5px 0px 5px 0px;
+    color: white;
+    background-color: black;
+    border: 10px solid #FF7F50; /* shorthand border */
+    border-radius: 0.5in;
+}
+/* implemented grid features on first and second image group */
+/* selector list */
+.media-images-group-1, .media-images-group-2 {
+    display: grid;
+    grid-template-columns: 3in 3in 3in 3in;
+    column-gap: 2in;
+    grid-template-rows: auto;
+    justify-self: start;
+    align-self: center;
+    padding-left: 1.5in;
+}
+#audio-recording {
+    font-size: x-large;
+    background-color: #FF7F50;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 0.5in;
+    padding-left: 10px;
+}
+#video-recording {
+    font-size: x-large;
+    background-color: #FF7F50;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 0.5in;
+    padding-left: 10px;
 }
 /* applying inline display for copyright footer */
 #footer-copyright {
@@ -199,4 +267,39 @@ button:active {
 /* applying none display for footer email portion*/
 #footer-email {
     display: none;
+}
+/* For mobile */
+@media (min-width: 600px) {
+    html {
+      width: 50%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    html {width: auto;}
+  }
+/* descendant combinator */ 
+section p {
+    color: darkred;
+}
+/* child combinator */
+footer > p {
+    background-color: black;
+    color: white;
+}
+/* the general sibling selector selects all elements that are next siblings of a specified element. */
+footer ~ p {
+    color: black;
+    background-color: #FF7F50;
+    border: 10px solid black;
+} 
+/* The adjacent sibling selector is used to select an element that is directly after another specific element. */
+div + p {
+    color: pink;
+    background-color: black;
+    padding-left: 6.5in;
+}
+/* Combining Two Selectors - All <li> elements with class="name"  */
+li.name {
+    color: green;
 }
