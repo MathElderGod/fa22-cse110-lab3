@@ -45,14 +45,14 @@
             another.-->
         <header>
             <div class="course-meeting">
-                <img src="images/cse110-rectangular.png" alt="picture-of-cse-110" width="200" height="100">
-                <h3>Software Engineering</h3>
+                <img src="images/cse110-rectangular.png" alt="picture-of-cse-110" width="200" height="100" class="cse_110_image">
+                <h3 class="software_enginerring_title">Software Engineering</h3>
             </div>
             <!-- Links to the site's main sections; usually represented by menu 
                 buttons, links, or tabs. -->
-            <nav>
+            <nav class="nav_data">
                 <!-- unordered list-->
-                <ul>
+                <ul id="nav-unordered-list">
                     <!-- list element and hyperlink element with attributes-->
                     <li><a href="#attendees">Attendees</a></li>
                     <li><a href="#agenda">Meeting Agenda</a></li>
@@ -75,9 +75,9 @@
             <h1>Team Asuma's First Meeting: Introductions</h1>
             <!-- h2 is a subheading of the website -->
             <h2>Introducing Ourselves to Eachother:</h2>
-            <details style="background-color: black;color:white">
+            <details class="details_tab" style="background-color: black;color:white">
                 <summary>First Meeting</summary>
-                <p>The second week of the quarter is finally here. Overall, teams were assigned <br> 
+                <p class="first_meeting_detials">The second week of the quarter is finally here. Overall, teams were assigned <br> 
                     and groups are finally starting to conduct their first meetings. Team Asuma has <br>
                     decided to conduct their first meeting while ensuring to address any issue along the way. <br>
                     Review this webpage to catch up on the overview of the first meeting. 
@@ -86,10 +86,10 @@
             <!-- h3 is a sub-subheading of the website and so on -->
             <!-- Of the six heading levels available, you should aim to use no more
                 than three per page -->
-            <h3 style="color:rgb(255, 255, 255);text-align: center;"><time datetime="2022-10-04">4 October 2022</time></h3>
+            <h3 class="date_tab" style="color:rgb(255, 255, 255);text-align: center;"><time datetime="2022-10-04">4 October 2022</time></h3>
             <section>
                 <h2 id="attendees">Attendees:</h2>
-                <ul>
+                <ul id="attendies-unordered-list">
                     <li><u>Alexander G. Arias</u></li>
                     <li><u>Alexander Olsen</u></li>
                     <li><u>Antonio Peso Vilella</u></li>
@@ -102,7 +102,7 @@
                 </ul>
             </section>
             <h2 id="agenda">Meeting Agenda: ~ 60 Minutes</h2>
-            <ol>
+            <ol id="agenda-ordered-list">
                 <li><b>Introduce yourself when asked to do so.</b> <strong><em>~ 2 
                     minutes each person</em></strong>
                 </li>
