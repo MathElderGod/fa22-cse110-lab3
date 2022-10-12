@@ -1,8 +1,135 @@
-body { 
-    background-color: hsl(150deg 30% 60%);
-} 
+/*////////////////////////////////////////////////////////////////////////////*/
+/* center into image from the web page*/
+.cse_110_image {
+    display: block;
+    margin-left: auto; /* first long margin */
+    margin-right: auto; /* second long margin */
+    margin-top: 0.5in; /* third long margin */
+    margin-bottom: 0.5in; /* fourth long margin */
+}
+/* cenetering the page pre title */
+.software_enginerring_title {
+    color: white;
+    background-color: black; /* first background color change */
+    /* absolute length unit px aka pixels*/
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    /* introduced all border templates */
+    border-color: white;
+    border-style: solid; 
+    border-width: 10px;
+    border-radius: 0.5in;
+}
+/* Make the font size larger for the navigation tab */
+.nav_data {
+    font-size: 1.3em; /* first relative unit */
+    margin: 10px 10px 10px 10px; /* first short margin */
+}
+
+/* Setting undordered list backgrounds and borders */
+ul {
+    color: black;
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+    border-style: solid; 
+    border-width: 10px;
+    border-radius: 0.5in;
+    padding: 0.5in 0in 0.5in 1in;
+}
+/* Setting ordered list backgrounds and borders */
+ol {
+    color: black;
+    font-size: large;
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+    border-style: solid; 
+    border-width: 10px;
+    border-radius: 0.5in;
+    padding: 0.5in 0in 0.5in 1in;
+}
+/* setting paragraph background and colors */
+p {
+    color: black;
+    font-size: large;
+    background-color: white;
+    border-color: #FF7F50;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 0.5in;
+    padding: 0.5in 0in 0.5in 0.5in;
+}
+/* Setting the title background to black, color of text to white, and margin
+the left */
 h1 { 
     color: rgb(255, 255, 255); 
     background-color: black;
-    margin-left: 40px; 
+    /* absolute length unit px aka pixels*/
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border-color: white;
+    border-style: solid; 
+    border-width: 10px;
+    border-radius: 0.5in;
+}
+/* changing border optiuons for all sub-headers */
+h2 {
+    font-size: 25px; /* third absolute unit */
+    text-indent: 15px;
+    padding: 5px 0px 5px 0px;
+    border-color: black;
+    border-style: solid; 
+    border-width: 10px;
+    border-radius: 0.5in;
+}
+/* body of web page */
+body { 
+    /* setting backgorund color of web page */
+    background-color: hsl(150deg 30% 60%);
+    /* make the font size for the entire page larger */
+    font-size: 13pt; /* first absolute unit */
+    width: 15in; /* second absolute unt */
+    margin: auto; /* first auto margin */
+}
+/* setting border on details tab */ 
+.details_tab {
+    font-size: 25px; /* third absolute unit */
+    text-indent: 15px;
+    padding: 5px 0px 5px 0px;
+    border-color: #FF7F50;
+    border-style: solid; 
+    border-width: 10px;
+    border-radius: 0.5in;
+}
+
+/* setting fontsize and centering data on the details paragraph */
+.first_meeting_detials {
+    text-align: center;
+    font-size: 2.6ex; /* third  relative unit */
+}
+/* setting nav data text color*/
+#nav-unordered-list {
+    color: rgb(170, 11, 170);
+}
+/* setting fontsize for the date tab */
+.date_tab {
+    font-size: 2rem; /* second relative unit*/
+    background-color: black;
+    padding: 5px 0px 5px 0px;
+    border-radius: 0.5in;
+}
+/* long padding the attendee unordered list */
+/* implemented all text requirements */
+#attendies-unordered-list {
+    color: blueviolet; /* first color text */
+    text-decoration: solid; /* first text decoration */
+    text-align: left; /* first text alignment */
+    font-size: large;
+    padding-left: 1.5in;
+    padding-right: 0.5in;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* short padding the agenda ordered list */
+#agenda-ordered-list {
+    padding: 10px 0.5in 10px 1.5in;
 }
