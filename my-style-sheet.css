@@ -2,10 +2,19 @@
 /* center into image from the web page*/
 .cse_110_image {
     display: block;
+    border-color: yellow;
+    border-style: solid; 
+    border-width: 10px;
+    border-radius: 0.5in;
     margin-left: auto; /* first long margin */
     margin-right: auto; /* second long margin */
     margin-top: 0.5in; /* third long margin */
     margin-bottom: 0.5in; /* fourth long margin */
+
+    /* The element is positioned according to the normal flow of the document. 
+    The top, right, bottom, left, and z-index properties have no effect. This is 
+    the default value.*/
+    position: static;
 }
 /* cenetering the page pre title */
 .software_enginerring_title {
@@ -19,6 +28,15 @@
     border-style: solid; 
     border-width: 10px;
     border-radius: 0.5in;
+}
+/* :hover can be used to select a button when a user's pointer hovers 
+over the button and this selected button can then be styled. */
+a:hover {
+    color: red;
+}
+/* Matches when an item is being activated by the user. For example, when the item is clicked on. */
+a:active {
+    color: brown;
 }
 /* Make the font size larger for the navigation tab */
 .nav_data {
@@ -35,6 +53,8 @@ ul {
     border-width: 10px;
     border-radius: 0.5in;
     padding: 0.5in 0in 0.5in 1in;
+    /* min width overwrites data, if its is larger than the value set */
+    min-width: 3in;
 }
 /* Setting ordered list backgrounds and borders */
 ol {
@@ -95,9 +115,7 @@ body {
     font-size: 25px; /* third absolute unit */
     text-indent: 15px;
     padding: 5px 0px 5px 0px;
-    border-color: #FF7F50;
-    border-style: solid; 
-    border-width: 10px;
+    border: 10px solid #FF7F50; /* shorthand border */
     border-radius: 0.5in;
 }
 
@@ -116,6 +134,14 @@ body {
     background-color: black;
     padding: 5px 0px 5px 0px;
     border-radius: 0.5in;
+    height: 0.5in;
+    width: 3in;
+
+    /* The element is positioned according to the normal flow of 
+    the document, and then offset relative to itself based on the 
+    values of top, right, bottom, and left*/
+    position: relative;
+    left: 6in;
 }
 /* long padding the attendee unordered list */
 /* implemented all text requirements */
@@ -124,12 +150,53 @@ body {
     text-decoration: solid; /* first text decoration */
     text-align: left; /* first text alignment */
     font-size: large;
+    position: relative;
+    left: 5.5in;
     padding-left: 1.5in;
     padding-right: 0.5in;
     padding-top: 10px;
     padding-bottom: 10px;
+    max-width: 2in;
+    min-width: 1in;
+    
+}
+/* applying CSS information to the questionare data */
+#questionare-data {
+    background-color: #FF7F50;
+    border-style: dashed;
+    border-color: black;
+    border-radius: 0.5in;
+    position: relative;
+    left: 6in;
+    max-width: 3in;
+    padding-left: 0.5in;
+    padding-right: 0.5in;
+    padding-top: 0.5in;
+    padding-bottom: 0.5in;
+}
+/* setting hover over blowing off steam button*/
+button:hover {
+    color: darkred;
+}
+/* Matches when an item is being activated by the user. For example, when the item is clicked on. */
+button:active {
+    color: darkgreen;
 }
 /* short padding the agenda ordered list */
 #agenda-ordered-list {
     padding: 10px 0.5in 10px 1.5in;
+}
+/* applying inline display for copyright footer */
+#footer-copyright {
+    display: inline;
+    padding-right: 0.5in;
+}
+/* applying inline display for footer name portion */
+#footer-name {
+    display: inline;
+    padding-right: 0.5in;
+}
+/* applying none display for footer email portion*/
+#footer-email {
+    display: none;
 }
