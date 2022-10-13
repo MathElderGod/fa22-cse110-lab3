@@ -269,9 +269,17 @@ button:active {
     display: none;
 }
 /* For mobile */
-@media (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     html {
       width: 50%;
+      background-color: lightblue;
+    }
+    /* if mobile, remove multimedia and forms */
+    #forms-section {
+        display: none;
+    }
+    #media {
+        display: none;
     }
 }
 @media only screen and (min-width: 768px) {
